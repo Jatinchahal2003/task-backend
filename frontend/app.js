@@ -1,3 +1,7 @@
+window.onerror = function (msg, url, line) {
+    alert("JS Error: " + msg);
+};
+
 const API = "https://task-backend.onrender.com";
 
 // REGISTER

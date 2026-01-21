@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body onload="loadTasks()">
@@ -28,9 +28,9 @@
         <button class="logout-btn" onclick="logout()">Logout</button>
 
     </div>
-    <script src="app.js">
+    <script src="/app.js">
         if (!localStorage.getItem("token")) {
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         }
     </script>
 </body>
