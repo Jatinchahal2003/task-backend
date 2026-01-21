@@ -1,0 +1,166 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+/* ---------- MAIN CARD ---------- */
+.container {
+    background: #ffffff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    color: #555;
+}
+
+/* ---------- INPUTS ---------- */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5563d6;
+}
+
+/* ---------- LINKS ---------- */
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ---------- DASHBOARD ---------- */
+.dashboard {
+    width: 600px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+}
+
+.task-input button {
+    width: 120px;
+}
+
+/* ---------- TASK LISTS ---------- */
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+li {
+    background: #f4f6ff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background: #e9ecff;
+}
+
+/* ---------- COMPLETED TASK ---------- */
+.completed li {
+    background: #e6ffe6;
+    color: #2f7a2f;
+    text-decoration: line-through;
+}
+
+/* ---------- LOGOUT BUTTON ---------- */
+.logout-btn {
+    margin-top: 10px;
+    background: #ff5e5e;
+}
+
+.logout-btn:hover {
+    background: #e04848;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #ff5e5e;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    color: #d43f3f;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 650px) {
+    .dashboard {
+        width: 100%;
+    }
+}

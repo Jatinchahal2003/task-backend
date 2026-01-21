@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+</head>
+
+<body onload="loadTasks()">
+
+    <div class="container dashboard">
+
+        <h2>Dashboard</h2>
+
+        <div class="task-input">
+            <input id="taskInput" placeholder="New task">
+            <button onclick="createTask()">Add</button>
+        </div>
+
+        <h3>Pending Tasks</h3>
+        <ul id="pending"></ul>
+
+        <h3>Completed Tasks</h3>
+        <ul id="completed" class="completed"></ul>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+
+    </div>
+    <script src="app.js">
+        if (!localStorage.getItem("token")) {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>
