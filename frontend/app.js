@@ -13,7 +13,7 @@ function register() {
     }).then(res => res.json())
         .then(data => {
             alert(data.message);
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         });
 }
 
@@ -121,5 +121,5 @@ function completeTask(id) {
 // LOGOUT
 function logout() {
     localStorage.removeItem("token");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
